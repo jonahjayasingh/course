@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <style>
+    body{
+        margin: 0;
+    }
+    
+    .optionselect{
+        margin-top: 70px;
+        background-image: url(image/sunset-1373171_1920\ copy.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        padding-top: 250px;
+        padding-left: 30%;
+    }
+    h1{
+        padding-top: 20px;
+    }
+    h1,h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+    .form-control{
+        width: 25%;
+    }
+
+    .changecolor{
+        background-color: rgb(236, 108, 11);
+    }
+
+    #error{
+        color: red;
+        margin-left: 250px;
+        font-size: larger;
+    }
+    .spancolor{
+        color: rgb(236, 108, 11);
+        font-weight: 700;
+    }
+
+    h4{
+        font-weight: 900;
+    }
+    h6{
+        font-weight: 700;
+    }
+
+    .container-fluid{
+        background-color: brown;
+        padding-top: 50px;
+        margin-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px ;
+        padding-bottom: 50px;
+    }
+    .coll a{
+        padding-right: 20px;
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .colll a{
+        padding-right: 20px;
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 800;
+      }
+    
+    
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top" id="nav">
+        <a href="index.html" class="navbar-brand"><img src="image/1602742091_DUNKINLogo.png" width="150" height="50" alt="logo"></a>
+        <ul class="navbar-nav" >
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+            </li> 
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Locate us</a>
+            </li>
+            <li class="nav-item">
+                <a href="feedback.html" class="nav-link">Feedback</a>
+            </li>
+            <li class="nav-item">
+                <a href="offer.html" class="nav-link">View offers</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="btn" id="orderbtn">Order Online</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="optionselect">
+        <div class="form-group d-flex">
+            <select class="form-control" id="city" onchange="change(this.id, 'outlet')">
+                <option >Select a city</option>
+                <option value="Arumanai">Arumanai</option>
+                <option value="kanniyakumari">kanniyakumari</option>
+                <option value="Marthandam">Marthandam</option>
+                <option value="Nagercoil">Nagercoil</option>
+                <option value="Thuckalay">Thuckalay</option>
+                <option value="Muttom">Muttom</option>
+            </select>
+            <select class="form-control ml-3"  id="outlet">
+                <option >Choose the Outlet</option>
+            </select>
+            <button class="btn changecolor ml-3" onclick="error()">Search</button>
+        </div>
+        <span id="error"></span>
+    </div>
+
+    <div class="container">
+        <h1>DUNKIN' DONUTS NEAR ME</h1>
+        <h2>FIND DUNKIN' INDIA NEAR ME</h2>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="card Arumanai">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Arumanai</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Arumanai">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Attoor</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Arumanai">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Aruvikkarai</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="card kanniyakumari">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">kaliyal</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card kanniyakumari">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">kanniyakumari</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card kanniyakumari">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">kuzhithurai</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="card kanniyakumari">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">kuzhithurai West</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Marthandam">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Marthandam</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Marthandam">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Marthandam West</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="card Marthandam">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Marthandam North</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Nagercoil">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Nagercoil</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Nagercoil">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Ponmanai</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card Thuckalay">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Thuckalay</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Thuckalay">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Tiruvattar</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+            <div class="col">
+                <div class="card Muttom">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Muttom</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card Muttom">
+                    <img src="image/flower.jpg" alt="" class="card-img-top">
+                     <div class="card-body">
+                        <h4 class="card-title">Colachel</h4>
+                        <h6><span class="spancolor">Address : </span>Lorem ipsum dolor sit amet.</h6>
+                        <a href="https://goo.gl/maps/R6r1YK9Mww8peDj96" class="btn" id="orderbtn" target="_blank">Get Direction</a>
+                        <h6><span class="spancolor">Timings : </span>11:00AM - 11:00PM</h6>
+                        <h6><span class="spancolor">E-mail : </span>jayasinghjonah24@gmail.com</h6>
+                        <h6><span class="spancolor">Tel : </span>7845514185</h6>
+                     </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+          <a href="index.html"><img src="image/1602742091_DUNKINLogo.png" alt="" width="150" height="50"></a>
+        </div>
+        <div class="row">
+          <div class="coll float-left"> 
+            <a href="#">Home</a>
+            <a href="#">About US</a>
+            <a href="#">Menu</a>
+            <a href="#">Locate Us</a>
+            <a href="#">Feedback</a>
+            <a href="#">View Offers</a>
+            <a href="#">Order online</a>
+          </div>
+          <hr style="border:1px solid white; width:100%">
+        </div>
+        <div class="row">
+          <div class="colll">
+            <a href="#">Terms & conditions</a>
+            <a href="#">Feedback</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="colll">
+            <a href="#">jonahjayasingh@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function change(s1,s2){
+            var s1 =document.getElementById("city");
+            var s2 = document.getElementById("outlet");
+            console.log(s1.value, s2.value)
+            s2.innerHTML = "";
+            var optionArray = [];
+
+            
+            if (s1.value == "Arumanai"){
+                // s2.document.createElement("option").add("hi")
+                var optionArray = ["Arumanai", "Attoor", "Aruvikkarai"];
+            }   
+            else if (s1.value == "kanniyakumari") {
+                var optionArray = ["kanniyakumari", "kuzhithurai", "kuzhithurai West"];
+            }   
+            else if (s1.value == "Marthandam") {
+                var optionArray = ["Marthandam", "Marthandam West", "kuzhithurai West"];
+            }  
+            else if (s1.value == "Nagercoil") {
+                var optionArray = ["Nagercoil", "Ponmanai"];
+            }   
+            else if (s1.value == "Thuckalay") {
+                var optionArray = ["Thuckalay", "Tiruvattar"];
+            }   
+            else if (s1.value == "Muttom") {
+                var optionArray = ["Muttom", "Colachel"]
+                
+            } 
+            else {
+                
+            }
+
+            for (var option in optionArray){
+
+                var newoption = document.createElement("option");
+                newoption.innerHTML  = optionArray[option];
+                s2.options.add(newoption);
+            }
+        }
+
+        function error(city){
+            var city = document.getElementById("city").value;
+            if (city == "Select a city"){
+                document.getElementById("error").innerHTML = "Please select a city";
+            }
+        }
+    // while (){
+    //     var city = document.getElementById("city").value;
+    //     console.log(city)
+    //     if (city == "Muttom"){
+    //             $(document).ready(function(){
+    //             $(".btn").click(function(){
+    //                 $(".Arumanai").hide();
+    //                 $(".kanniyakumari").hide();
+    //                 $(".Marthandam").hide();
+    //                 $(".Nagercoil").hide();
+    //                 $(".Thuckalay").hide();
+    //             });
+    //         });
+    //     }
+
+    //     if (city == "Muttom"){
+    //             $(document).ready(function(){
+    //             $(".btn").click(function(){
+    //                 $(".Arumanai").hide();
+    //                 $(".kanniyakumari").hide();
+    //                 $(".Marthandam").hide();
+    //                 $(".Nagercoil").hide();
+    //                 $(".Thuckalay").hide();
+    //             });
+    //         });
+    //     }
+    // }
+        
+        
+        
+
+
+
+
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>pseudoelement</title>
+    <style>
+        p::first-line{
+            color: tomato;
+        }
+        p::first-letter{
+            color: rgb(66, 66, 11);
+            font-size: 100px;
+        }
+        div::before{
+            content: "hello world";
+        }
+        div::after{
+            content: "welcome home";
+        }
+        div:hover::after{
+            content: "byebye";
+        }
+        .p1::selection{
+            color: rgb(221, 239, 56);
+            background-color: rgb(8, 141, 68);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>Lorem ipsum dolor sit amet.</div>
+
+    <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Quia quaerat vero, iure expedita fuga nesciunt ratione maiores at impedit obcaecati!</div>
+</body>
+</html>

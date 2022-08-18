@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    background-color: wheat;
+    width: 100%;
+    text-align: center;
+    padding-left: 30px;
+
+    
+}
+.navbar-brand{
+    padding-left: 100px;
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    color: black;
+    font-weight: bolder;
+    
+}
+.nav-link:hover{
+    color: rgb(236, 108, 11);
+}
+#orderbtn{
+    background-color: rgb(236, 108, 11);
+}
